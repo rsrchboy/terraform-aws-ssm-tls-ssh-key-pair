@@ -93,11 +93,14 @@ Available targets:
 
 ## Outputs
 
-| Name                     | Description                          |
-|--------------------------|--------------------------------------|
-| public_key               | Contents of the generated public key |
-| ssh_public_key_ssm_path  | Public key SSM path                  |
-| ssh_private_key_ssm_path | Private key SSM path                 |
+| Name | Description |
+|------|-------------|
+| public_key | Contents of the generated public key |
+| ssh_private_key_ssm_path | SSM path of the generated private key |
+| ssh_public_key_ssm_path | SSM path of the generated public key |
+
+
+
 
 ## Share the Love 
 
