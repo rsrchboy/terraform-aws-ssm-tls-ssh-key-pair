@@ -3,6 +3,12 @@ output "public_key" {
   description = "Content of the generated public key"
 }
 
+output "private_key" {
+  value       = local.rsa ? join("", tls_private_key.default_rsa.*.private_key_pem) : join("", tls_private_key.default_ecdsa.*.private_key_pem)
+  description = "Content of the generated private key"
+  sensitive   = true
+}
+
 output "key_name" {
   value       = module.label.id
   description = "Name of SSH key"

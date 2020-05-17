@@ -24,6 +24,7 @@
 | Name | Description |
 |------|-------------|
 | key_name | Name of SSH key |
+| private_key | Content of the generated private key |
 | public_key | Content of the generated public key |
 | ssh_private_key_ssm_path | SSM path of the generated private key |
 | ssh_public_key_ssm_path | SSM path of the generated public key |
